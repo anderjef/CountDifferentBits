@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{74d12c78-2b3b-41e9-bb62-eaa4fc7085ff}</ProjectGuid>
-    <RootNamespace>countDifferentBits</RootNamespace>
+    <ProjectGuid>{efbfd16d-d23b-49ff-a300-d68e91216314}</ProjectGuid>
+    <RootNamespace>CountDifferentBits</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -139,7 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="countDifferentBits.cpp" />
+    <ClCompile Include="CountDifferentBits.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
