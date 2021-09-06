@@ -1,6 +1,6 @@
 //Jeffrey Andersen
-//This program was developed starting around October 24, 2020, to take two hexadecimal strings and return the number of binary bits different between the
-//two. This program was inspired by my Computer and Network Security (CSCE 465) college course and was tested on Windows.
+
+//future consideration: option/flag to start comparison from minLength rather than from 0
 
 #include <iostream>
 #include <bitset>
@@ -51,11 +51,11 @@ bitset<4> charToHex(const char c) {
 	case 'F':
 		return bitset<4>("1111");
 	}
-	cerr << "ERROR: could not convert " << c << " to hexadecimal.\n";
+	cerr << "ERROR: could not convert " << c << " to hexadecimal.\n"; //future consideration: handle non-convertable characters better
 	return bitset<4>("0000");
 }
 
-int main(int argc, char* argv[]) {
+int main(int argc, char* argv[]) { //returns zero on success and some other integer on failure
 	if (argc != 3) {
 		cerr << "Usage: <executable> <data1> <data2>\n";
 		return 1;
